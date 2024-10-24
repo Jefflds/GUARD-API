@@ -1,0 +1,16 @@
+ignores:
+  [
+    '@commitlint/*',
+    '@nestjs/*',
+    '@types/*',
+    '@typescript-eslint/*',
+    'commitizen',
+    'depcheck',
+    'eslint-*',
+    'husky',
+    'prettier-plugin-organize-imports',
+    'source-map-support',
+    'ts-loader',
+    'tsconfig-paths',
+  ]
+skip-missing: true

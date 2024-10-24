@@ -1,0 +1,7 @@
+#!/bin/bash
+
+npm audit fix || echo "Não foi possivel corrigir os pacotes. Verifique manualmente, caso viável." 
+
+npx lint-staged
+
+npx depcheck
