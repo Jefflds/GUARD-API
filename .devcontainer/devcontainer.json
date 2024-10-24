@@ -1,23 +1,20 @@
 {
-	"name": "GUARD-API",
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
-	"features": {
-		"ghcr.io/itsmechlark/features/postgresql:1": {}
-	},
-	"forwardPorts": [
-		3000
-	],
-	"postCreateCommand": "npm i -g @nestjs/cli && git init &&  git config --global --add safe.directory /workspaces/guard-api",
-	"remoteUser": "root",
-	"customizations": {
-		"vscode": {
-			"settings": {
-				"editor.formatOnSave": true
-			},
-			"extensions": [
-				"esbenp.prettier-vscode",
-				"editorconfig.editorconfig"
-			]
-		}
-	}
+  "name": "GUARD-API",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/guard-api",
+  "features": {
+    "ghcr.io/devcontainers-community/npm-features/typescript:1": {}
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm i -g @nestjs/cli && git init && git config --global --add safe.directory /workspaces/guard-api",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      },
+      "extensions": ["esbenp.prettier-vscode", "editorconfig.editorconfig"]
+    }
+  }
 }
