@@ -13,5 +13,6 @@ ignores:
     'ts-loader',
     'tsconfig-paths',
     'prisma',
+    '@prisma/client',
   ]
 skip-missing: true
