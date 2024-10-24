@@ -12,5 +12,6 @@ ignores:
     'source-map-support',
     'ts-loader',
     'tsconfig-paths',
+    'prisma',
   ]
 skip-missing: true
